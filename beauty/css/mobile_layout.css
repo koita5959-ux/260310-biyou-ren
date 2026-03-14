@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+Theme Name: AMATERASU
+Description: Easy,SimpleDesign
+Version: simple 1.1
+Base Color: red
+Author: AMATERASU
+Author URI: http://www.seo-amaterasu.com/
+*/
+
+@media screen and (max-width: 768px){
+
+/* layout */
+body {
+  margin: 0; 
+  padding: 0;
+}
+
+/* youtube、GoogleMapなどのiframe */
+iframe{
+  width: 100%;
+  height: 230px;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 3;
+  position: relative;
+}
+
+#header_in {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0 2.604166666%;
+  display: table;
+}
+
+#main_visual {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-color: #c9b5a2; /* [if lt IE 9] */
+  background: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #f3e5dd),
+  color-stop(1, #c9b5a2)
+);
+  background: -o-linear-gradient(bottom, #f3e5dd 0%, #c9b5a2 100%);
+  background: -moz-linear-gradient(bottom, #f3e5dd 0%, #c9b5a2 100%);
+  background: -webkit-linear-gradient(bottom, #f3e5dd 0%, #c9b5a2 100%);
+  background: -ms-linear-gradient(bottom, #f3e5dd 0%, #c9b5a2 100%);
+  background: linear-gradient(to bottom, #f3e5dd 0%, #c9b5a2 100%);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 2;
+  position: relative;
+}
+
+/* 骨盤 */
+#main_visual_kotuban {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: #FFDDDD;
+  position: relative;
+}
+
+/* 整体 */
+#main_visual_seitai {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background: #ffd58c;
+  position: relative;
+}
+/* 美容 */
+#main_visual_biyou {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/main_image_biyou_bak.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+#main_visual_in {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+#global_navi {
+  display: none;
+}
+
+.home #wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0 !important;
+  display: table;
+}
+
+#wrapper,
+.page-template-sub_top #wrapper {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 5.208333333% 2.604166666% 0 2.604166666%;
+  display: block;
+}
+
+#content {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-bottom: 5.208333333%;
+  float: none;
+}
+
+.home #sidebar {
+  width: 100%;
+  height: auto;
+  margin-bottom: -5.208333333%;
+  padding: 0 2.604166666%;
+  float: none;
+}
+
+#sidebar,
+.page-template-sub_top #sidebar {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  float: none;
+}
+
+#footer {
+  width: 100%;
+  height: auto;
+  //padding-bottom: 11.19791666%;
+  display: table;
+  clear: both;
+}
+
+#footer_top {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+#footer_top_in {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 2.604166666% 2.604166666% 5.208333333% 2.604166666%;
+  display: table;
+}
+
+#footer_bottom {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+}
+
+#footer_bottom_in {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding-bottom: 0;
+  display: table;
+}
+
+#copyright {
+  width: 100%;
+  height: auto;
+  padding: 2.604166666% 0;
+  padding-bottom: 17%;
+  display: table;
+  background-color: #e4789b;
+  margin-bottom: 10%;
+}
+}
