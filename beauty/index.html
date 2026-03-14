@@ -61,7 +61,8 @@
   <!-- font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
   <!--SPメニュー-->
@@ -156,11 +157,28 @@
     </div>
     <!-- //header -->
 
-    <!-- main_visual (renewed) -->
-    <div class="hero-renewal pc">
-      <img src="images/hero_main.jpg" alt="美容鍼灸院れん-REN- 施術イメージ" />
-      <div class="hero-renewal__overlay">
-        <p class="hero-renewal__copy">肌の未来は、内側から始まる。<br>一生モノの美しさへ。</p>
+    <!-- main_visual -->
+    <div id="main_visual_biyou" class="pc">
+      <div id="main_visual_in">
+        <div class="slick_fv">
+          <div class="slick_fv_item">
+            <img src="images/fv02.webp?20251007" alt="整骨院れん-REN- 美顔鍼" width="auto" height="auto" style="object-position: center top;" />
+          </div>
+          <div class="slick_fv_item">
+            <img src="images/fv01.webp?20251007" alt="整骨院れん-REN- 美顔鍼" width="auto" height="auto" />
+            <div class="slick_fv_item01">
+              <span class="curtain fade">
+                <span class="curtain-inner">シワやたるみなどのお肌の悩みを改善し、</span>
+              </span>
+              <span class="curtain fade">
+                <span class="curtain-inner">本来の美しさが手に入ります。</span>
+              </span>
+            </div>
+          </div>
+          <div class="slick_fv_item">
+            <img src="images/fv03.webp?20251007" alt="整骨院れん-REN- 美顔鍼" width="auto" height="auto" />
+          </div>
+        </div>
       </div>
     </div>
     <!-- //main_visual -->
@@ -175,7 +193,7 @@
         <div class="header_box">
           <div class="inner_left">
             <a class="mouse_on" href="https://miyazaki-ren.com/beauty/" title="ホーム"><img src="images/logo.webp?20251007"
-                alt="美容鍼灸院れん-REN-" width="auto" height="auto" /></a>
+                alt="整骨院れん-REN-" width="auto" height="auto" /></a>
           </div>
           <div class="inner_right">
             <div class="sp_nav_btn">
@@ -213,10 +231,9 @@
     <!-- //header -->
   </div>
 
-  <div class="hero-renewal sp">
-    <img src="images/hero_main.jpg" alt="美容鍼灸院れん-REN- 施術イメージ" />
-    <div class="hero-renewal__overlay">
-      <p class="hero-renewal__copy">肌の未来は、内側から始まる。<br>一生モノの美しさへ。</p>
+  <div id="main_visual_biyou" class="sp">
+    <div id="main_visual_in">
+      <img src="images/main-image-sp.webp?20251007" alt="整骨院れん-REN- 美顔鍼" width="auto" height="auto" />
     </div>
   </div>
 
@@ -228,10 +245,6 @@
 
       <!-- post -->
       <div class="post">
-
-        <!-- wrapper_in -->
-        <div class="wrapper_in">
-
 
           <!-- リードセクション -->
           <div id="lead" class="lead">
@@ -250,16 +263,20 @@
 
           <!-- Before/After セクション（3枚横並び） -->
           <section class="bf-section">
-            <h2 class="bf-section__title">美容鍼灸院れん-REN-で施術を受けられた方の変化をご覧ください！</h2>
+            <img src="images/icon_butterfly.svg" alt="" class="bf-section__icon">
+            <h2 class="bf-section__title">美容鍼灸院れん-REN-で<br class="pc-only">施術を受けられた方の変化をご覧ください！</h2>
             <div class="bf-section__grid">
               <div class="bf-section__item">
-                <img src="images/b_f_img_biyou01.jpg" alt="Before/After 1">
+                <div class="bf-section__item-label"><span>Before</span><span>After</span></div>
+                <img class="bf-section__item-img" src="images/bf_new_01.jpg" alt="Before/After 1">
               </div>
               <div class="bf-section__item">
-                <img src="images/b_f_img_biyou02.jpg" alt="Before/After 2">
+                <div class="bf-section__item-label"><span>Before</span><span>After</span></div>
+                <img class="bf-section__item-img" src="images/bf_new_02.jpg" alt="Before/After 2">
               </div>
               <div class="bf-section__item">
-                <img src="images/b_f_img_biyou03.jpg" alt="Before/After 3">
+                <div class="bf-section__item-label"><span>Before</span><span>After</span></div>
+                <img class="bf-section__item-img" src="images/bf_new_03.jpg" alt="Before/After 3">
               </div>
             </div>
           </section>
@@ -339,14 +356,8 @@
             </div>
           </section>
 
-
-        </div>
-        <!-- //wrapper_in -->
-		  
       </div>
       <!-- //post -->
-
-      <p>&nbsp;</p>
 
       <!-- store-contact -->
       <section class="store_contact">
@@ -427,7 +438,8 @@
             </div>
             <a href="tel:0987-67-6777" class="store_tel_cta">TEL：0987-67-6777</a>
             <a href="#form" class="store_link_cta">WEBから予約する</a>
-            <a href="https://page.line.me/seikotsuin-ren?openQrModal=true" target="_blank" rel="noopener" class="store_line_cta">LINEで予約する</a>
+            <a href="https://page.line.me/seikotsuin-ren?openQrModal=true" target="_blank" rel="noopener"
+              class="store_line_cta">LINEで予約する</a>
           </div>
           <!-- <div class="store_in store02">
             <h3 class="store_ttl">宮崎院にお問い合わせ</h3>
@@ -490,7 +502,8 @@
             </div>
             <a href="tel:0985-38-5777" class="store_tel_cta">TEL：0985-38-5777</a>
             <a href="#form" class="store_link_cta">WEBから予約する</a>
-            <a href="https://line.me/R/ti/p/@255ujbgl?from=page&liff.referrer=https%3A%2F%2Fmiyazaki-ren.com%2F&searchId=255ujbgl" target="_blank" rel="noopener" class="store_line_cta">LINEで予約する</a>
+            <a href="https://line.me/R/ti/p/@255ujbgl?from=page&liff.referrer=https%3A%2F%2Fmiyazaki-ren.com%2F&searchId=255ujbgl"
+              target="_blank" rel="noopener" class="store_line_cta">LINEで予約する</a>
           </div>
         </div>
       </section>

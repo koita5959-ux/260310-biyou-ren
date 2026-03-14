@@ -13,10 +13,14 @@ Author URI: http://www.seo-amaterasu.com/
 @media screen and (min-width: 769px) {
   /* layout */
   body {
-    min-width: 1280px;
     margin: 0;
     padding: 0;
   }
+
+  /*
+   * LP/サブページの共通骨格を可変幅化
+   * コンテンツ本体は 1200px、外側ガターを含めて 1280px で運用する
+   */
 
   .home #header,
   .page-template-sub_top #header {
@@ -37,11 +41,13 @@ Author URI: http://www.seo-amaterasu.com/
   }
   
   #header_in {
-    width: 1280px;
+    width: 100%;
+    max-width: none;
     height: auto;
-    margin: 0 auto;
-    padding: 15px 50px 15px 50px;
-    display: table;
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-sizing: border-box;
   }
 
   #main_visual {
@@ -116,11 +122,13 @@ Author URI: http://www.seo-amaterasu.com/
   }
 
   #global_navi_in {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0 50px;
+    padding: 0 40px;
     overflow: hidden;
+    box-sizing: border-box;
   }
 
   .home #wrapper,
@@ -133,18 +141,20 @@ Author URI: http://www.seo-amaterasu.com/
   }
 
   .wrapper_in {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 40px 100px 0 100px;
+    padding: 40px 40px 0;
     display: table;
+    box-sizing: border-box;
   }
 
   #wrapper {
-    width: 1280px;
+    width: 100%;
     height: auto;
-    margin: 0 auto;
-    padding: 40px 100px;
+    margin: 0;
+    padding: 0;
     display: table;
   }
 
@@ -154,6 +164,7 @@ Author URI: http://www.seo-amaterasu.com/
     height: auto;
     margin: 0;
     padding: 0;
+    float: none;
   }
 
   #content {
@@ -191,11 +202,13 @@ Author URI: http://www.seo-amaterasu.com/
   }
 
   #footer_top_in {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 40px 50px;
+    padding: 40px;
     display: table;
+    box-sizing: border-box;
   }
 
   #footer_bottom {
@@ -205,12 +218,14 @@ Author URI: http://www.seo-amaterasu.com/
   }
 
   #footer_bottom_in {
-    width: 1280px;
+    max-width: 1280px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 30px 50px 25px 50px;
+    padding: 30px 40px 25px;
     display: table;
     text-align: center;
+    box-sizing: border-box;
   }
 
   #copyright {

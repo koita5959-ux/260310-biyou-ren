@@ -1,27 +1,38 @@
 $(function () {
-    $(".slick_fv").slick({
-        autoplay: true,
-        dots: true,
-        fade: true,
-        speed: 1500,
-        autoplaySpeed: 4000,
-        prevArrow: '<img src="https://miyazaki-ren.com/beauty/images/arrow01-right.png" class="slide-arrow prev-arrow">',
-        nextArrow: '<img src="https://miyazaki-ren.com/beauty/images/arrow01-right.png" class="slide-arrow next-arrow">'
-    });
-});
+    var $heroSlider = $(".slick_fv");
 
-$(window).on('scroll load', function() {
-    // スクロールアニメーション
-    var box = $('.fade');
-    var animated = 'fade-active';
-    box.each(function(){
-        var boxOffset = $(this).offset().top;
-        var scrollPos = $(window).scrollTop();
-        var wh = $(window).height();
-        if(scrollPos > boxOffset - wh + 10 ){
-            $(this).addClass(animated);
+    function activateHeroCurtain($slide) {
+        var $curtains = $slide.find(".fade");
+        $(".slick_fv .fade").removeClass("fade-active");
+
+        if (!$curtains.length) {
+            return;
         }
-    });
+
+        window.requestAnimationFrame(function () {
+            $curtains.addClass("fade-active");
+        });
+    }
+
+    if ($heroSlider.length) {
+        $heroSlider.on("init", function (event, slick) {
+            activateHeroCurtain($(slick.$slides.get(slick.currentSlide)));
+        });
+
+        $heroSlider.on("afterChange", function (event, slick, currentSlide) {
+            activateHeroCurtain($(slick.$slides.get(currentSlide)));
+        });
+
+        $heroSlider.slick({
+            autoplay: true,
+            dots: true,
+            fade: true,
+            speed: 1500,
+            autoplaySpeed: 4000,
+            prevArrow: '<img src="https://miyazaki-ren.com/beauty/images/arrow01-right.png" class="slide-arrow prev-arrow">',
+            nextArrow: '<img src="https://miyazaki-ren.com/beauty/images/arrow01-right.png" class="slide-arrow next-arrow">'
+        });
+    }
 });
 
 
