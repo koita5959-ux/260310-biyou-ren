@@ -381,6 +381,7 @@ Author URI: http://www.seo-amaterasu.com/
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 0;
+    row-gap: 0 !important;
   }
 
   #footer_bottom_in ul li a {
@@ -592,7 +593,7 @@ Author URI: http://www.seo-amaterasu.com/
     color: white;
     text-decoration: none;
     text-align: center;
-    background-color: #e4789b;
+    background-color: transparent;
   }
 
   /* コンタクトフォーム */
