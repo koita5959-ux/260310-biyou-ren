@@ -36,11 +36,17 @@ $(function () {
 });
 
 
-$(window).on("scroll", function () {
-  if ($(this).scrollTop() > 100) { 
-    // 100px 以上スクロールしたら
-    $("#header_in, #header_in a").addClass("is_active");
-  } else {
-    $("#header_in, #header_in a").removeClass("is_active");
+$(function () {
+  var isSubpage = $("body").hasClass("page-subpage");
+
+  function syncHeaderState() {
+    if (isSubpage || $(window).scrollTop() > 100) {
+      $("#header_in, #header_in a").addClass("is_active");
+    } else {
+      $("#header_in, #header_in a").removeClass("is_active");
+    }
   }
+
+  syncHeaderState();
+  $(window).on("scroll", syncHeaderState);
 });

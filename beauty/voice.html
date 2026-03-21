@@ -16,13 +16,13 @@
   <link href="css/mobile_common.css?20251021" rel="stylesheet" type="text/css" media="all" />
   <link href="css/mobile_layout.css?20251021" rel="stylesheet" type="text/css" media="all" />
   <link href="css/mobile_style.css?20251021" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/renewal.css?20260312" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/renewal.css?20260318" rel="stylesheet" type="text/css" media="all" />
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <script type="text/javascript">
     jQuery(function(){
@@ -33,7 +33,7 @@
   </script>
   <script type="text/javascript">var now=new Date();function LoadProc(){document.getElementById("DateTimeDisp").innerHTML=now.getFullYear();}</script>
 </head>
-<body onload="LoadProc();">
+<body class="theme-apricot page-subpage" onload="LoadProc();">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPD2GJWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="pc">
@@ -91,10 +91,9 @@
     </div>
   </div>
 
-  <div class="subpage-hero">
-    <div>
+  <div class="subpage-hero subpage-hero--voice">
+    <div class="subpage-hero__inner">
       <h1 class="subpage-hero__title">お客様の声</h1>
-      <p class="subpage-hero__sub">Customer Voice</p>
     </div>
   </div>
 
@@ -103,57 +102,116 @@
   </div>
 
   <div id="wrapper">
-    <div class="subpage-content">
-
-      <div class="voice-grid">
-
-        <div class="voice-card">
-          <div class="voice-card__header">
-            <p class="voice-card__header-title">お客様の声</p>
-            <p class="voice-card__header-sub">Customer Voice</p>
-          </div>
-          <div class="voice-card__body">
-            <p class="voice-card__date">2025.12.15</p>
-            <h3 class="voice-card__title">【お客様の声】諦めていた肩こりが楽に</h3>
-            <p class="voice-card__text">長年悩んでいた肩こりと顔のむくみが、施術後すぐに変化を感じました。丁寧なカウンセリングで安心して受けられました。定期的に通いたいと思います。</p>
-          </div>
+    <section class="section-fullwidth section-bg-white">
+      <div class="section-fullwidth__inner subpage-section subpage-section--center">
+        <div class="section-header">
+          <img src="images/icon_voice.svg" alt="" class="heading-icon">
+          <h2 class="section-title">お客様の声</h2>
         </div>
-
-        <div class="voice-card">
-          <div class="voice-card__header">
-            <p class="voice-card__header-title">お客様の声</p>
-            <p class="voice-card__header-sub">Customer Voice</p>
-          </div>
-          <div class="voice-card__body">
-            <p class="voice-card__date">2025.11.20</p>
-            <h3 class="voice-card__title">【お客様の声】ゴッドハンド！</h3>
-            <p class="voice-card__text">友人の紹介で初めて美容鍼を体験しました。施術後、鏡を見て驚きました。フェイスラインがすっきりして、肌にハリが出たのを実感。スタッフの方も優しくて、リラックスできました。</p>
-          </div>
+        <div class="voice-intro">
+          <p class="text-copy">施術後に感じていただいた変化や、通いやすさ、空間の印象など、<br class="pc-only">美容鍼灸院れんへ寄せていただいたお声を掲載しています。</p>
         </div>
+      </div>
+    </section>
 
-        <div class="voice-card">
-          <div class="voice-card__header">
-            <p class="voice-card__header-title">お客様の声</p>
-            <p class="voice-card__header-sub">Customer Voice</p>
+    <section class="section-fullwidth section-bg-base-alt">
+      <div class="section-fullwidth__inner subpage-section">
+        <div class="voice-grid">
+
+          <div class="voice-card info-card info-card-surface">
+            <div class="voice-card__header">
+              <p class="voice-card__header-title">お客様の声</p>
+            </div>
+            <div class="voice-card__body">
+              <p class="voice-card__date">2025.12.15</p>
+              <p class="voice-card__meta">フェイスライン・肩まわり</p>
+              <h3 class="voice-card__title">【お客様の声】諦めていた肩こりが楽に</h3>
+              <p class="voice-card__text">長年悩んでいた肩こりと顔のむくみが、施術後すぐに変化を感じました。丁寧なカウンセリングで安心して受けられました。定期的に通いたいと思います。</p>
+            </div>
           </div>
-          <div class="voice-card__body">
-            <p class="voice-card__date">2025.10.08</p>
-            <h3 class="voice-card__title">【お客様の声】目の周りの小じわで美容鍼</h3>
-            <p class="voice-card__text">目元の小じわが気になり始めて来院しました。マロン鍼は初めてでしたが、思っていたより痛みも少なく、施術後は顔全体が明るくなった気がします。完全個室なのもありがたいです。</p>
+
+          <div class="voice-card info-card info-card-surface">
+            <div class="voice-card__header">
+              <p class="voice-card__header-title">お客様の声</p>
+            </div>
+            <div class="voice-card__body">
+              <p class="voice-card__date">2025.11.20</p>
+              <p class="voice-card__meta">初めての美容鍼</p>
+              <h3 class="voice-card__title">【お客様の声】ゴッドハンド！</h3>
+              <p class="voice-card__text">友人の紹介で初めて美容鍼を体験しました。施術後、鏡を見て驚きました。フェイスラインがすっきりして、肌にハリが出たのを実感。スタッフの方も優しくて、リラックスできました。</p>
+            </div>
           </div>
+
+          <div class="voice-card info-card info-card-surface">
+            <div class="voice-card__header">
+              <p class="voice-card__header-title">お客様の声</p>
+            </div>
+            <div class="voice-card__body">
+              <p class="voice-card__date">2025.10.08</p>
+              <p class="voice-card__meta">目元・肌印象</p>
+              <h3 class="voice-card__title">【お客様の声】目の周りの小じわで美容鍼</h3>
+              <p class="voice-card__text">目元の小じわが気になり始めて来院しました。マロン鍼は初めてでしたが、思っていたより痛みも少なく、施術後は顔全体が明るくなった気がします。完全個室なのもありがたいです。</p>
+            </div>
+          </div>
+
         </div>
-
       </div>
+    </section>
 
-      <div class="subpage-cta">
-        <p class="subpage-cta__text">あなたも美容鍼を体験してみませんか？</p>
-        <a href="https://miyazaki-ren.com/beauty/#form" class="subpage-cta__button">ご予約・お問い合わせ</a>
+    <section class="section-fullwidth section-bg-base">
+      <div class="section-fullwidth__inner section-fullwidth__inner--narrow subpage-nav">
+        <div class="banner-links__grid">
+          <a href="maron.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">マロン鍼とは？</span>
+              <span class="banner-links__item-sub">Maron Acupuncture</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_maron.svg" alt="">
+            </div>
+          </a>
+          <a href="staff.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">施術スタッフ</span>
+              <span class="banner-links__item-sub">Staff</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_staff.svg" alt="">
+            </div>
+          </a>
+          <a href="faq.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">よくあるご質問</span>
+              <span class="banner-links__item-sub">FAQ</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_faq.svg" alt="">
+            </div>
+          </a>
+          <a href="voice.html" class="banner-links__item is-current">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">お客様の声</span>
+              <span class="banner-links__item-sub">Customer Voice</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_voice.svg" alt="">
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="subpage-back">
-        <a href="index.html">← TOPに戻る</a>
-      </div>
+    </section>
 
-    </div>
+    <section class="section-fullwidth section-bg-main">
+      <div class="section-fullwidth__inner">
+        <div class="subpage-cta">
+          <p class="subpage-cta__text">あなたも美容鍼を体験してみませんか？</p>
+          <a href="https://miyazaki-ren.com/beauty/#form" class="subpage-cta__button button-pill button-pill--cta">ご予約・お問い合わせ</a>
+        </div>
+        <div class="subpage-back">
+          <a href="index.html">← TOPに戻る</a>
+        </div>
+      </div>
+    </section>
   </div>
 
   <div id="footer">

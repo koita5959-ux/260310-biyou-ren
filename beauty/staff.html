@@ -16,13 +16,13 @@
   <link href="css/mobile_common.css?20251021" rel="stylesheet" type="text/css" media="all" />
   <link href="css/mobile_layout.css?20251021" rel="stylesheet" type="text/css" media="all" />
   <link href="css/mobile_style.css?20251021" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/renewal.css?20260312" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/renewal.css?20260318" rel="stylesheet" type="text/css" media="all" />
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <script type="text/javascript">
     jQuery(function(){
@@ -33,7 +33,7 @@
   </script>
   <script type="text/javascript">var now=new Date();function LoadProc(){document.getElementById("DateTimeDisp").innerHTML=now.getFullYear();}</script>
 </head>
-<body onload="LoadProc();">
+<body class="theme-apricot page-subpage" onload="LoadProc();">
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPD2GJWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="pc">
@@ -91,10 +91,9 @@
     </div>
   </div>
 
-  <div class="subpage-hero">
-    <div>
+  <div class="subpage-hero subpage-hero--staff">
+    <div class="subpage-hero__inner">
       <h1 class="subpage-hero__title">施術スタッフ</h1>
-      <p class="subpage-hero__sub">Staff</p>
     </div>
   </div>
 
@@ -103,32 +102,108 @@
   </div>
 
   <div id="wrapper">
-    <div class="subpage-content">
-
-      <div class="staff-profile">
-        <div class="staff-profile__image">
-          <img src="images/staff_hirotani.jpg" alt="廣谷 羽美">
+    <section class="section-fullwidth section-bg-white">
+      <div class="section-fullwidth__inner subpage-section subpage-section--center">
+        <div class="section-header">
+          <img src="images/icon_staff.svg" alt="" class="heading-icon">
+          <h2 class="section-title">施術スタッフ</h2>
         </div>
-        <div class="staff-profile__info">
-          <h2 class="staff-profile__name">廣谷 羽美</h2>
-          <p class="staff-profile__name-reading">Hirotani Hami</p>
-          <p class="staff-profile__text">
-            宮崎県に美容鍼の魅力を広め、年齢やお悩みにとらわれず本来の美しさを引き出すお手伝いをしています。<br><br>
-            美容鍼を通して心や身体のバランスを整え、笑顔で毎日を過ごせるようサポートいたします。<br><br>
-            お帰りの際には、自然と笑顔になり「また来たい」と思っていただける施術と空間づくりを大切にしています。
-          </p>
+        <div class="staff-intro">
+          <p class="text-copy">美容のお悩みだけでなく、日々の疲れや緊張感まで丁寧にくみ取りながら、<br class="pc-only">その方らしい美しさへ寄り添う施術を大切にしています。</p>
+        </div>
+        <div class="staff-profile info-card info-card-surface">
+          <div class="staff-profile__image">
+            <img src="images/staff_hirotani.jpg" alt="廣谷 羽美">
+          </div>
+          <div class="staff-profile__info">
+            <h3 class="staff-profile__name">廣谷 羽美</h3>
+            <p class="staff-profile__name-reading">Hirotani Hami</p>
+            <p class="staff-profile__text">
+              宮崎県に美容鍼の魅力を広め、年齢やお悩みにとらわれず本来の美しさを引き出すお手伝いをしています。<br><br>
+              美容鍼を通して心や身体のバランスを整え、笑顔で毎日を過ごせるようサポートいたします。<br><br>
+              お帰りの際には、自然と笑顔になり「また来たい」と思っていただける施術と空間づくりを大切にしています。
+            </p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="subpage-cta">
-        <p class="subpage-cta__text">施術のご予約はこちらから</p>
-        <a href="https://miyazaki-ren.com/beauty/#form" class="subpage-cta__button">ご予約・お問い合わせ</a>
+    <section class="section-fullwidth section-bg-base-alt">
+      <div class="section-fullwidth__inner subpage-section">
+        <div class="staff-message">
+          <div class="staff-message__box info-card info-card-surface">
+            <h3 class="staff-message__title">Message</h3>
+            <div class="text-body">
+              <p>美容鍼灸院れんでは、お顔の変化だけを追うのではなく、その日の体調や生活背景までふまえたカウンセリングを大切にしています。</p>
+              <p>小さなお悩みでも話しやすい空気感を心がけ、安心して施術を受けていただけるよう、説明や刺激量の調整も丁寧に行います。</p>
+            </div>
+          </div>
+          <div class="staff-care info-card info-card-surface">
+            <h3 class="staff-care__title">大切にしていること</h3>
+            <ul class="staff-care__list">
+              <li>美容のお悩みを一緒に整理する丁寧なカウンセリング</li>
+              <li>刺激の感じ方に配慮した無理のない施術設計</li>
+              <li>施術後まで落ち着いて過ごせる上質な時間づくり</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="subpage-back">
-        <a href="index.html">← TOPに戻る</a>
-      </div>
+    </section>
 
-    </div>
+    <section class="section-fullwidth section-bg-base">
+      <div class="section-fullwidth__inner section-fullwidth__inner--narrow subpage-nav">
+        <div class="banner-links__grid">
+          <a href="maron.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">マロン鍼とは？</span>
+              <span class="banner-links__item-sub">Maron Acupuncture</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_maron.svg" alt="">
+            </div>
+          </a>
+          <a href="staff.html" class="banner-links__item is-current">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">施術スタッフ</span>
+              <span class="banner-links__item-sub">Staff</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_staff.svg" alt="">
+            </div>
+          </a>
+          <a href="faq.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">よくあるご質問</span>
+              <span class="banner-links__item-sub">FAQ</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_faq.svg" alt="">
+            </div>
+          </a>
+          <a href="voice.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">お客様の声</span>
+              <span class="banner-links__item-sub">Customer Voice</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_voice.svg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-fullwidth section-bg-main">
+      <div class="section-fullwidth__inner">
+        <div class="subpage-cta">
+          <p class="subpage-cta__text">施術のご予約はこちらから</p>
+          <a href="https://miyazaki-ren.com/beauty/#form" class="subpage-cta__button button-pill button-pill--cta">ご予約・お問い合わせ</a>
+        </div>
+        <div class="subpage-back">
+          <a href="index.html">← TOPに戻る</a>
+        </div>
+      </div>
+    </section>
   </div>
 
   <div id="footer">

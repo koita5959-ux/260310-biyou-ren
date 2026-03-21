@@ -18,13 +18,13 @@
   <link href="css/mobile_common.css?20251021" rel="stylesheet" type="text/css" media="all" />
   <link href="css/mobile_layout.css?20251021" rel="stylesheet" type="text/css" media="all" />
   <link href="css/mobile_style.css?20251021" rel="stylesheet" type="text/css" media="all" />
-  <link href="css/renewal.css?20260312" rel="stylesheet" type="text/css" media="all" />
+  <link href="css/renewal.css?20260318" rel="stylesheet" type="text/css" media="all" />
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <script type="text/javascript">
     jQuery(function(){
@@ -51,7 +51,7 @@
     }
   </script>
 </head>
-<body onload="LoadProc();">
+<body class="theme-apricot page-subpage" onload="LoadProc();">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPD2GJWM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
@@ -119,10 +119,10 @@
   </div>
 
   <!-- Hero -->
-  <div class="subpage-hero">
-    <div>
+  <div class="subpage-hero subpage-hero--maron">
+    <div class="subpage-hero__inner">
       <h1 class="subpage-hero__title">マロン鍼とは</h1>
-      <p class="subpage-hero__sub">About Marron Acupuncture</p>
+      <p class="subpage-hero__text">肌表面だけでなく、巡りや緊張のバランスにも着目しながら、<br>内側から整えていく美容鍼です。</p>
     </div>
   </div>
 
@@ -133,62 +133,146 @@
 
   <!-- Content -->
   <div id="wrapper">
-    <div class="subpage-content">
-
-      <div class="maron-intro">
-        <h2 class="maron-about__title">美容鍼灸とは（東洋医学の考え方）</h2>
-        <p>美容鍼灸は、数千年前から発展してきた東洋医学の理論をもとにした美容施術です。</p>
-        <br>
-        <p>東洋医学では、</p>
-        <p>・気（生命活動のエネルギー）</p>
-        <p>・血（栄養や巡り）</p>
-        <p>・水（潤い・リンパなど）</p>
-        <br>
-        <p>のバランスが整うことで、身体と精神の安定、本来の美しさが保たれると考えられています。</p>
-        <br>
-        <p>鍼はツボや筋肉、真皮層へ微細な刺激を与えることで、巡りを整え、身体が本来持つ働きを引き出す施術です。<br>美容鍼灸はその考え方を"美容に特化"させたもの。<br>表面的なケアだけではなく、内側から整えることを前提としています。</p>
+    <section class="section-fullwidth section-bg-base">
+      <div class="section-fullwidth__inner subpage-section subpage-section--center">
+        <img src="images/icon_beauty.svg" alt="" class="heading-icon">
+        <h2 class="section-title">美容鍼灸とは</h2>
+        <p class="text-copy">表面的なお手入れだけでなく、巡りや緊張のバランスにも目を向けながら、<br class="pc-only">本来の美しさを内側から整えていく施術です。</p>
+        <div class="maron-flow text-body">
+          <p>美容鍼灸は、数千年前から発展してきた東洋医学の理論をもとにした美容施術です。</p>
+          <p>東洋医学では、</p>
+          <ul class="maron-list">
+            <li>気（生命活動のエネルギー）</li>
+            <li>血（栄養や巡り）</li>
+            <li>水（潤い・リンパなど）</li>
+          </ul>
+          <p>のバランスが整うことで、身体と精神の安定、本来の美しさが保たれると考えられています。</p>
+          <p>鍼はツボや筋肉、真皮層へ微細な刺激を与えることで、巡りを整え、身体が本来持つ働きを引き出す施術です。<br>美容鍼灸はその考え方を“美容に特化”させたもの。<br>表面的なケアだけではなく、内側から整えることを前提としています。</p>
+        </div>
+        <div class="maron-highlight">
+          <div class="maron-highlight__item info-card info-card-soft">
+            <strong>巡りを整える</strong>
+            <p>血流や筋緊張に着目し、顔まわりの印象をやわらげます。</p>
+          </div>
+          <div class="maron-highlight__item info-card info-card-soft">
+            <strong>肌印象へ働きかける</strong>
+            <p>微細な刺激を通して、ハリ感や明るさの土台にアプローチします。</p>
+          </div>
+          <div class="maron-highlight__item info-card info-card-soft">
+            <strong>内側から整える</strong>
+            <p>美容と不調感を切り分けず、全体のバランスを見ながら施術します。</p>
+          </div>
+        </div>
+        <div class="maron-photo-block">
+          <img src="images/maron_closeup.jpg" alt="マロン鍼施術の様子">
+        </div>
       </div>
+    </section>
 
-      <div class="maron-image">
-        <img src="images/maron_closeup.jpg" alt="マロン鍼施術の様子">
+    <section class="section-fullwidth section-bg-base-alt">
+      <div class="section-fullwidth__inner subpage-section">
+        <img src="images/icon_approach.svg" alt="" class="heading-icon">
+        <h2 class="section-title">美容鍼灸のアプローチ</h2>
+        <p class="text-copy">フェイスラインや肌印象だけでなく、睡眠や緊張感などの背景にも目を向けながら、<br class="pc-only">一人ひとりに合わせて施術を組み立てます。</p>
+        <div class="maron-approach info-card-dark">
+          <h3 class="maron-approach__title">① フェイスライン・むくみ感へのアプローチ</h3>
+          <p class="maron-approach__text">鍼刺激は局所の血流変化や筋緊張の調整に関与するとされています。顔面には表情筋が密に存在し、筋の緊張状態は輪郭の印象に影響します。また、顔面部は静脈・リンパ還流が滞りやすい部位でもあります。循環動態が整うことで、むくみ感の変化を感じる方もいます。</p>
+        </div>
+        <div class="maron-approach info-card-dark">
+          <h3 class="maron-approach__title">② ハリ・肌印象へのアプローチ</h3>
+          <p class="maron-approach__text">皮膚は表皮・真皮・皮下組織から構成されています。真皮層には線維芽細胞が存在し、コラーゲンやエラスチンを産生します。鍼による微細な刺激は、生体の修復過程（創傷治癒機転）を引き起こす一因となります。その過程で真皮の再構築が促される可能性があるとされています。</p>
+        </div>
+        <div class="maron-approach info-card-dark">
+          <h3 class="maron-approach__title">③ 内側からのバランス調整</h3>
+          <p class="maron-approach__text">皮膚や血管は自律神経の支配を受けています。交感神経・副交感神経の働きは、血流や皮膚温、睡眠の質などに関与します。鍼刺激は末梢神経を介して中枢へ入力され、神経系を通じた全身性の反応が生じることが知られています。<br><br>美容鍼灸は局所施術でありながら、神経・血流・皮膚構造を踏まえた施術です。</p>
+        </div>
       </div>
+    </section>
 
-      <div class="maron-approach">
-        <h3 class="maron-approach__title">&#9312; フェイスライン・むくみ感へのアプローチ</h3>
-        <p class="maron-approach__text">鍼刺激は局所の血流変化や筋緊張の調整に関与するとされています。顔面には表情筋が密に存在し、筋の緊張状態は輪郭の印象に影響します。また、顔面部は静脈・リンパ還流が滞りやすい部位でもあります。循環動態が整うことで、むくみ感の変化を感じる方もいます。</p>
+    <section class="section-fullwidth section-bg-base-light maron-section-soft">
+      <div class="section-fullwidth__inner subpage-section subpage-section--center">
+        <img src="images/icon_maron_page.svg" alt="" class="heading-icon">
+        <h2 class="section-title">マロン鍼とは</h2>
+        <p class="text-copy">約100本の鍼を顔全体へ均一に配置し、密度のある刺激で土台から整えていく、<br class="pc-only">美容鍼灸院れんの施術です。</p>
+        <div class="maron-feature-note info-card-dark">
+          <span class="maron-feature__number">100</span>
+          <span class="maron-feature__unit">本前後</span>
+          <p>顔全体へ均一に刺激を入れるための設計</p>
+        </div>
+        <div class="maron-flow text-body">
+          <p>マロン鍼は、約100本の鍼を使用する美容鍼です。</p>
+          <p>一般的な美容鍼は、少ない本数で効果を出す方法が多く見られます。マロン鍼は、細胞へのアプローチをし内側から変えていきます。</p>
+          <p>皮膚は表皮・真皮・皮下組織の構造を持ちます。真皮層には線維芽細胞が存在し、そこにヒアルロン酸、コラーゲン、エラスチンが生成されており自分の抗体でより良くしていきます。</p>
+          <p>顔は立体構造であり、頬・目元・フェイスラインなどは連動しています。そのため、一部ではなく全体に同じ密度で刺激を入れる設計になっています。</p>
+          <p>マロン鍼では、本数・深さ・太さを調整し、真皮層への刺激を前提として施術を行います。<br>100本という数字は、顔全体に均一に配置するための設計です。</p>
+        </div>
+        <div class="maron-feature-points">
+          <div class="maron-feature-point">
+            <strong>顔全体に均一に配置</strong>
+            <p>頬や目元だけでなく、顔全体のつながりを見ながらバランスよく刺激します。</p>
+          </div>
+          <div class="maron-feature-point">
+            <strong>深さ・本数・太さを調整</strong>
+            <p>お顔の状態や刺激の感じ方に合わせて、無理のない範囲で施術を組み立てます。</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="maron-approach">
-        <h3 class="maron-approach__title">&#9313; ハリ・肌印象へのアプローチ</h3>
-        <p class="maron-approach__text">皮膚は表皮・真皮・皮下組織から構成されています。真皮層には線維芽細胞が存在し、コラーゲンやエラスチンを産生します。鍼による微細な刺激は、生体の修復過程（創傷治癒機転）を引き起こす一因となります。その過程で真皮の再構築が促される可能性があるとされています。</p>
+    <section class="section-fullwidth section-bg-base">
+      <div class="section-fullwidth__inner section-fullwidth__inner--narrow subpage-nav">
+        <div class="banner-links__grid">
+          <a href="maron.html" class="banner-links__item is-current">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">マロン鍼とは？</span>
+              <span class="banner-links__item-sub">Maron Acupuncture</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_maron.svg" alt="">
+            </div>
+          </a>
+          <a href="staff.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">施術スタッフ</span>
+              <span class="banner-links__item-sub">Staff</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_staff.svg" alt="">
+            </div>
+          </a>
+          <a href="faq.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">よくあるご質問</span>
+              <span class="banner-links__item-sub">FAQ</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_faq.svg" alt="">
+            </div>
+          </a>
+          <a href="voice.html" class="banner-links__item">
+            <div class="banner-links__item-content">
+              <span class="banner-links__item-title">お客様の声</span>
+              <span class="banner-links__item-sub">Customer Voice</span>
+            </div>
+            <div class="banner-links__item-icon">
+              <img src="images/icon_voice.svg" alt="">
+            </div>
+          </a>
+        </div>
       </div>
+    </section>
 
-      <div class="maron-approach">
-        <h3 class="maron-approach__title">&#9314; 内側からのバランス調整</h3>
-        <p class="maron-approach__text">皮膚や血管は自律神経の支配を受けています。交感神経・副交感神経の働きは、血流や皮膚温、睡眠の質などに関与します。鍼刺激は末梢神経を介して中枢へ入力され、神経系を通じた全身性の反応が生じることが知られています。<br><br>美容鍼灸は局所施術でありながら、神経・血流・皮膚構造を踏まえた施術です。</p>
+    <section class="section-fullwidth section-bg-main">
+      <div class="section-fullwidth__inner">
+        <div class="subpage-cta">
+          <p class="subpage-cta__text">マロン鍼にご興味のある方は、<br>お気軽にお問い合わせください。</p>
+          <a href="https://miyazaki-ren.com/beauty/#form" class="subpage-cta__button button-pill button-pill--cta">ご予約・お問い合わせ</a>
+        </div>
+        <div class="subpage-back">
+          <a href="index.html">← TOPに戻る</a>
+        </div>
       </div>
-
-      <div class="maron-about">
-        <h2 class="maron-about__title">マロン鍼とは</h2>
-        <p class="maron-about__text">
-          マロン鍼は、約100本の鍼を使用する美容鍼です。<br><br>
-          一般的な美容鍼は、少ない本数で効果を出す方法が多く見られます。マロン鍼は、細胞へのアプローチをし内側から変えていきます。<br><br>
-          皮膚は表皮・真皮・皮下組織の構造を持ちます。真皮層には線維芽細胞が存在し、そこにヒアルロン酸、コラーゲン、エラスチンが生成されており自分の抗体でより良くしていきます。<br><br>
-          顔は立体構造であり、頬・目元・フェイスラインなどは連動しています。そのため、一部ではなく全体に同じ密度で刺激を入れる設計になっています。<br><br>
-          マロン鍼では、本数・深さ・太さを調整し、真皮層への刺激を前提として施術を行います。<br>100本という数字は、顔全体に均一に配置するための設計です。
-        </p>
-      </div>
-
-      <!-- CTA -->
-      <div class="subpage-cta">
-        <p class="subpage-cta__text">マロン鍼にご興味のある方は、<br>お気軽にお問い合わせください。</p>
-        <a href="https://miyazaki-ren.com/beauty/#form" class="subpage-cta__button">ご予約・お問い合わせ</a>
-      </div>
-      <div class="subpage-back">
-        <a href="index.html">← TOPに戻る</a>
-      </div>
-
-    </div>
+    </section>
   </div>
 
   <!-- footer -->
